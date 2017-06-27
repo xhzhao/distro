@@ -106,8 +106,9 @@ if [[ `uname` == 'Linux' ]]; then
     export CMAKE_LIBRARY_PATH=$PREFIX/include:/opt/OpenBLAS/include:$PREFIX/lib:/opt/OpenBLAS/lib:$CMAKE_LIBRARY_PATH
 fi
 export CMAKE_PREFIX_PATH=$PREFIX
-which $CC
-#git submodule update --init --recursive
+
+git submodule update --init --recursive
+
 
 # If we're on OS X, use clang
 if [[ `uname` == "Darwin" ]]; then
