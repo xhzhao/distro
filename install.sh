@@ -83,6 +83,8 @@ if [[ `uname` == 'Linux' ]]; then
             ICC_ON=1
         fi
     else
+        CC=gcc
+        CXX=g++
         ICC_ON=0
     fi
     
@@ -104,8 +106,8 @@ if [[ `uname` == 'Linux' ]]; then
     export CMAKE_LIBRARY_PATH=$PREFIX/include:/opt/OpenBLAS/include:$PREFIX/lib:/opt/OpenBLAS/lib:$CMAKE_LIBRARY_PATH
 fi
 export CMAKE_PREFIX_PATH=$PREFIX
-
-git submodule update --init --recursive
+which $CC
+#git submodule update --init --recursive
 
 # If we're on OS X, use clang
 if [[ `uname` == "Darwin" ]]; then
