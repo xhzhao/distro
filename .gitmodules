@@ -64,9 +64,6 @@
 [submodule "extra/nnx"]
 	path = extra/nnx
 	url = https://github.com/clementfarabet/lua---nnx.git
-[submodule "extra/nn"]
-	path = extra/nn
-	url = https://github.com/MlWoo/nn.git
 [submodule "exe/env"]
 	path = exe/env
 	url = https://github.com/torch/env.git
@@ -91,3 +88,6 @@
 [submodule "extra/tds"]
 	path = extra/tds
 	url = https://github.com/torch/tds.git
+[submodule "extra/nn"]
+	path = extra/nn
+	url = https://github.com/xhzhao/nn.git
