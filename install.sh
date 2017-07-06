@@ -252,7 +252,7 @@ add the following lines to your shell profile:
 "
 fi
 
-WRITE_PATH_TO_PROFILE=0
+BATCH_INSTALL=1
 if [[ $BATCH_INSTALL == 0 ]]; then
     if [ -f "$RC_FILE" ]; then
         echo "
@@ -281,6 +281,8 @@ else
         WRITE_PATH_TO_PROFILE=1
     fi
 fi
+
+WRITE_PATH_TO_PROFILE=0
 
 if [[ $WRITE_PATH_TO_PROFILE == 1 ]]; then
     echo "
